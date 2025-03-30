@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">Agregar Producto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h2>📞 Contacto</h2>
+            <p>Si tienes alguna duda o consulta, puedes contactarnos a través de los siguientes medios:</p>
+            
+            <div class="info-contacto">
+                <p><strong>📍 Dirección:</strong> Av Universitaria Santoto Tunja. Boyacá</p>
+                <p><strong>📧 Correo:</strong> santoto@tiendaonline.com</p>
+                <p><strong>📞 Teléfono:</strong> +57 322 841 4445</p>
+                <p><strong>🕒 Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <h3>📩 Envíanos un mensaje</h3>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="confirmacion" style="display:none; color: green; font-weight: bold;">✅ ¡Mensaje enviado con éxito!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tienda Online - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #7b1fa2, #4a148c);
+    color: #fff;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #8e24aa, #ff4081);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra de navegación */
+nav {
+    
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Contenido principal */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* ---- Página de Productos ---- */
+
+/* Categorías */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.categorias button {
+    background: linear-gradient(45deg, #ff4081, #ffeb3b);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.categorias button:hover {
+    background: linear-gradient(45deg, #ffeb3b, #ff4081);
+    transform: scale(1.1);
+}
+
+/* Grid de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    border: 2px solid #ffeb3b;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background: #f8f8f8;
+    color: black;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto:hover {
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+}
+
+button.add-to-cart {
+    background: #ffeb3b;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button.add-to-cart:hover {
+    background: #fdd835;
+}
+
+/* ---- Página de Contacto ---- */
+.contacto {
+    background: #f4f4f4;
+    color: black;
+    padding: 30px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #ff4081;
+}
+
+.contacto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input, 
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff4081;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formulario button {
+    background: linear-gradient(45deg, #ff4081, #ffeb3b);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.formulario button:hover {
+    background: linear-gradient(45deg, #ffeb3b, #ff4081);
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #ff4081, #ffeb3b);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #b760c9;
+    margin: 0;
+    padding: 20px;
+    color: white; /* Asegura que el texto sea visible en el fondo */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background: rgb(148, 54, 167);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Agrupar etiquetas e inputs en columnas */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Estilos de etiquetas */
+label {
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Estilos de inputs y selects */
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: black; /* Asegura que el texto de los inputs sea visible */
+}
+
+/* Ajustes específicos para el textarea */
+textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+/* Contenedor de botones */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Botón Guardar */
+#saveButton {
+    background-color: #28a745;
+    margin-top: 15px;
+}
+
+#saveButton:hover {
+    background-color: #218838;
+}
+
+/* Botón Cancelar */
+#cancelButton {
+    background-color: #6c757d;
+    display: none;
+}
+
+#cancelButton:hover {
+    background-color: #5a6268;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento en caso de ser necesario */
+}
+
+/* Tabla de información */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    color: black; /* Asegura que el texto de la tabla sea legible */
+}
+
+/* Cabecera de la tabla */
+th {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+}
+
+/* Celdas */
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Estilo para los botones de acción */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Botón Editar */
+.edit-btn {
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Botón Eliminar */
+.delete-btn {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #bd2130;
+}
+
+/* Estilos de Fieldset y Legend */
+fieldset {
+    border: 2px solid #6a1b9a;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6a1b9a;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .input-group {
+        max-width: 100%;
+    }
+
+    .table-container {
+        overflow-x: scroll; /* Permite deslizar la tabla si es necesario */
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+/* Contenedor del checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre checkbox y texto */
+    justify-content: start;
+    margin: 10px 0;
+}
+
+/* Estilo del label */
+.checkbox-group label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Mejorar el tamaño y diseño del checkbox */
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff; /* Azul bonito */
+    cursor: pointer;
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+

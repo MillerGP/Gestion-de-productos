@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../proyecto_css_20__forms"
+		},
+		{
+			"path": "../../proyecto_css_19__forms"
+		},
+		{
+			"path": "../../proyecto_css_18__forms"
+		},
+		{
+			"path": "../../proyecto_css_17__forms"
+		},
+		{
+			"path": "../../proyecto_css_16_forms"
+		},
+		{
+			"path": "../../proyecto_css_15__forms"
+		},
+		{
+			"path": "../../proyecto_css_14__forms"
+		},
+		{
+			"path": "../../proyecto_css_13__reglas_resp_submenu"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proyecto_css_21_forms"
+	}
+}

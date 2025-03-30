@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li><li>
+                    <a href="gestion_productos.html">🛒 gestionar</a></li>
+            </ul>
+        </nav>
+        <h1>Nuestros Productos</h1>
+        
+    </header>
+
+    <main>
+        <section class="productos">
+            <h2>Categorías</h2>
+            <div class="categorias">
+                <button onclick="filtrarProductos('todos')">Todos</button>
+                <button onclick="filtrarProductos('tecnologia')">Tecnología</button>
+                <button onclick="filtrarProductos('ropa')">Ropa</button>
+                <button onclick="filtrarProductos('hogar')">Hogar</button>
+            </div>
+
+            <h2>Lista de Productos</h2>
+            <div class="productos-grid">
+
+                <!-- Tecnología -->
+                <div class="producto" data-categoria="tecnologia">
+                    <img src="../img/laptop.jpg" alt="Laptop">
+                    <h3>Laptop Gamer</h3>
+                    <p>Potente laptop con procesador i7 y 16GB RAM.</p>
+                    <p><strong>Precio: $1200</strong></p>
+                    <button class="add-to-cart" data-id="1" data-nombre="Laptop Gamer" data-precio="1200">Agregar al carrito</button>
+                </div>
+
+                <div class="producto" data-categoria="tecnologia">
+                    <img src="../img/celular.jpg" alt="Celular">
+                    <h3>Smartphone</h3>
+                    <p>Pantalla AMOLED de 6.5" y 128GB de almacenamiento.</p>
+                    <p><strong>Precio: $600</strong></p>
+                    <button class="add-to-cart" data-id="2" data-nombre="Smartphone" data-precio="600">Agregar al carrito</button>
+                </div>
+
+                <!-- Ropa -->
+                <div class="producto" data-categoria="ropa">
+                    <img src="../img/camisa.jpg" alt="Camisa">
+                    <h3>Camisa de Algodón</h3>
+                    <p>100% algodón, cómoda y elegante.</p>
+                    <p><strong>Precio: $40</strong></p>
+                    <button class="add-to-cart" data-id="3" data-nombre="Camisa de Algodón" data-precio="40">Agregar al carrito</button>
+                </div>
+
+                <div class="producto" data-categoria="ropa">
+                    <img src="../img/zapatos.jpg" alt="Zapatos">
+                    <h3>Zapatos Deportivos</h3>
+                    <p>Ideales para correr y caminar.</p>
+                    <p><strong>Precio: $70</strong></p>
+                    <button class="add-to-cart" data-id="4" data-nombre="Zapatos Deportivos" data-precio="70">Agregar al carrito</button>
+                </div>
+
+                <!-- Hogar -->
+                <div class="producto" data-categoria="hogar">
+                    <img src="../img/silla.jpg" alt="Silla">
+                    <h3>Silla de Oficina</h3>
+                    <p>Ergonómica con soporte lumbar.</p>
+                    <p><strong>Precio: $150</strong></p>
+                    <button class="add-to-cart" data-id="5" data-nombre="Silla de Oficina" data-precio="150">Agregar al carrito</button>
+                </div>
+
+                <div class="producto" data-categoria="hogar">
+                    <img src="../img/lampara.jpg" alt="Lámpara">
+                    <h3>Lámpara de Escritorio</h3>
+                    <p>Con luz LED regulable.</p>
+                    <p><strong>Precio: $30</strong></p>
+                    <button class="add-to-cart" data-id="6" data-nombre="Lámpara de Escritorio" data-precio="30">Agregar al carrito</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="carrito.js"></script>
+    <script>
+        function filtrarProductos(categoria) {
+            const productos = document.querySelectorAll('.producto');
+            productos.forEach(producto => {
+                if (categoria === 'todos' || producto.dataset.categoria === categoria) {
+                    producto.style.display = 'block';
+                } else {
+                    producto.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
